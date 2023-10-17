@@ -34,3 +34,30 @@ eval "$(pyenv virtualenv-init -)"
 ```bash
 exec $SHELL
 ```
+
+## Usage
+### Install Python versions
+To list all the available Python versions to install, run:
+```bash
+pyenv install --list  # tip: use grep to filter
+```
+
+Once you find the version you want, you can install it with a single command:
+```bash
+pyenv install -v 3.12.0
+```
+
+### Using Python versions
+Check what versions of Python you have available:
+```bash
+pyenv versions
+* system (set by /home/aris/.pyenv/version)
+3.8.12
+3.11.4
+```
+
+The * indicates that the system Python version is active currently.
+To use another version as system default, run:
+```bash
+pyenv global 3.11.4
+```
