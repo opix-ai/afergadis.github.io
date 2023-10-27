@@ -6,6 +6,15 @@ dependency management.
 Please follow the instructions of the [official installer](
 https://python-poetry.org/docs/master/#installing-with-the-official-installer)
 
+## Configuration
+The default directory to store the virtual environments is `~/.cache/pypoetry`.
+Be aware that this is going to grow large depending on the number of them and
+the packages they have. So, if you want to use another directory, possibly in
+a mounted disk, run the following:
+```bash
+poetry config cache-dir /path/to/pypoetry
+```
+
 ## Creating a new project
 To create a new project with poetry as a dependency manager, follow the steps.
 ```bash
