@@ -23,11 +23,10 @@ cd wow_project
 ```
 
 *IMPORTANT:* If the Python version you will use for the `wow_project` is 
-not the global version you have set with [`pyenv`](pyenv.md), then edit
-`pyproject.toml` and change the version in the line `python = `:
-```toml
-[tool.poetry.dependencies]
-python = "^3.7"
+not the global version you have set with [`pyenv`](pyenv.md), then run
+the following command:
+```bash
+poetry env use ~/.pyenv/versions/3.12.1/bin/python
 ```
 For more information refer to the official [project setup guide](
 https://python-poetry.org/docs/master/basic-usage/#project-setup).
@@ -53,7 +52,7 @@ The easiest way to activate the virtual environment is to create a nested
 shell with `poetry shell`.
 
 To deactivate the virtual environment and exit this new shell type `exit`. To
-deactivate the virtual environment without leaving the shell use `deactivate`.
+deactivate the virtual environment without leaving the shell, type `deactivate`.
 
 Read more [here](
 https://python-poetry.org/docs/master/basic-usage/#activating-the-virtual-environment).
